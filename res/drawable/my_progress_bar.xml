@@ -1,0 +1,83 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Define the background properties like color etc -->
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="#000000"
+                android:centerY="1.0"
+                android:endColor="#000000"
+                android:startColor="#000000" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="90"
+                    android:endColor="#7700FF00"
+                    android:startColor="#7700FF00" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Define the progress properties like start color, end color etc -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#00BF00"
+                    android:centerY="1.0"
+                    android:endColor="#00BF00"
+                    android:startColor="#00BF00" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list><!--
+<layer-list
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+                android:id="@android:id/background">
+                <shape>
+                        <corners
+                                android:radius="5dip" />
+                        <gradient
+                                android:startColor="#ffffffff"
+                                android:centerColor="#ffdddddd"
+                                android:centerY="0.50"
+                                android:endColor="#ffffffff"
+                                android:angle="270" />
+                </shape>
+        </item>
+        <item
+                android:id="@android:id/secondaryProgress">
+                <clip>
+                        <shape>
+                                <corners
+                                        android:radius="5dip" />
+                                <gradient
+                                        android:startColor="#770e75af"
+                                        android:endColor="#771997e1"
+                                        android:angle="90" />
+                        </shape>
+                </clip>
+        </item>
+        <item
+                android:id="@android:id/progress">
+                <clip>
+                        <shape>
+                                <corners
+                                        android:radius="5dip" />
+                                <gradient
+                                        android:startColor="#ff0e75af"
+                                        android:endColor="#ff1997e1"
+                                        android:angle="90" />
+                        </shape>
+                </clip>
+        </item>
+</layer-list>
+-->
+

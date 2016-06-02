@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top" >
+
+  
+    <ProgressBar
+        android:id="@+id/loadingProgress"
+        style="@style/Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:indeterminate="true"
+        android:layout_gravity="top" />
+
+     <LinearLayout
+         android:id="@+id/main_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/simpleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            class="com.example.wikisearchapp.SimpleFragment" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+        android:listSelector="@android:color/darker_gray"
+        android:longClickable="true" >
+    </ListView>
+
+</LinearLayout>
